@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/isSupport"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="是否支持蓝牙"
+            android:textSize="16sp"
+            android:textColor="@color/color_33333"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/isOpen"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="蓝牙是否打开"
+            android:textSize="16sp"
+            android:textColor="@color/color_33333"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/pairedBlue"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="查找已配对设备"
+            android:textSize="16sp"
+            android:textColor="@color/color_33333"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:id="@+id/pairedBlueL"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/findDevice"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="扫描设备"
+            android:textSize="16sp"
+            android:textColor="@color/color_33333"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/findBlueL"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/connectDevice"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="设备连接"
+            android:textSize="16sp"
+            android:textColor="@color/color_33333"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

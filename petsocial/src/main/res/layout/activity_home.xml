@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+
+    <com.aaron.baselibs.base.UNScollViewPager
+        android:id="@+id/homeVP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homeBottomL" />
+
+    <LinearLayout
+        android:id="@+id/homeBottomL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/tab1L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/tab1Iv"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_tab_xq_choice"/>
+
+            <TextView
+                android:id="@+id/tab1Tx"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_label_1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/teal_200"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/tab2Iv"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_tab_gc_normal"/>
+
+            <TextView
+                android:id="@+id/tab2Tx"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_label_2"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_33333"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab3L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_2">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/ic_tab_fb"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab4L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/tab4Iv"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_tab_lt_normal"/>
+
+            <TextView
+                android:id="@+id/tab4Tx"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_label_3"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_33333"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab5L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/tab5Iv"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:src="@drawable/ic_tab_zj_normal"/>
+
+            <TextView
+                android:id="@+id/tab5Tx"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_label_4"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_33333"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

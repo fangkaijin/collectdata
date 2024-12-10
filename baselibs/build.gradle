@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.aaron.baselibs'
+    compileSdk V.compileSdk
+
+    defaultConfig {
+        minSdk V.minSdk
+        targetSdk V.targetSdk
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation Deps.corektx
+    implementation Deps.kotlinReflect
+    implementation Deps.lifecycleRuntimeKtx
+    implementation Deps.appcompatX
+    implementation Deps.activityKtx
+    implementation Deps.constraintlayoutX
+    implementation Deps.recyclerviewX
+    implementation Deps.viewpager2X
+
+    //协程
+    implementation Deps.kotlinxCoroutinesCore
+    implementation Deps.kotlinxCoroutinesAndroid
+    implementation Deps.lifecycleViewmodel
+
+    //lottie
+    implementation Deps.lottie
+
+    //okhttp
+    implementation Deps.okhttp3
+    implementation Deps.loggingInterceptor
+    //Glide
+    implementation Deps.glide4
+    implementation Deps.glideTransformations
+
+    //gson
+    implementation Deps.gson2
+
+    //camerax
+    implementation Deps.cameraCore
+    implementation Deps.cameraCamera2
+    implementation Deps.cameraLifecycle
+    implementation Deps.cameraView
+    implementation Deps.cameraExtensions
+
+    //权限
+    implementation Deps.permissionX
+
+    //rxjava
+    //Rxjava
+    implementation Deps.rxjava2
+    implementation Deps.rxandroid2
+
+    //
+    implementation Deps.exifinterface
+}
